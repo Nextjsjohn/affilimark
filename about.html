@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DevBlog - Julia Walker's Personal Blog</title>
+  <style>
+    select:focus {
+      border: none;
+      outline-offset: 0px;
+      text-decoration: none;
+      outline: none;
+    }
+
+    select:focus-visible {
+      border: none;
+      outline-offset: 0px;
+      text-decoration: none;
+      outline: none;
+    }
+  </style>
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./assets/images/favicon.ico" type="image/x-icon">
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.min.css">
+  <link rel="stylesheet" href="./assets/css/blog.css">
+
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+  <script src="./assets/js/tailwindcss.js"></script>
+
+</head>
+
+<body class="light-theme">
+
+  <!--
+    - #HEADER
+  -->
+
+  <header>
+
+    <div class="container">
+
+      <nav class="navbar">
+
+        <a href="#">
+          <img src="./assets/images/logo-light.svg" alt="Devblog's logo" width="150" height="40" class="logo-light">
+          <img src="./assets/images/logo-dark.svg" alt="Devblog's logo" width="150" height="40" class="logo-dark">
+        </a>
+
+        <div class="btn-group">
+
+          <button class="theme-btn theme-btn-mobile light">
+            <ion-icon name="moon" class="moon"></ion-icon>
+            <ion-icon name="sunny" class="sun"></ion-icon>
+          </button>
+
+          <button class="nav-menu-btn">
+            <ion-icon name="menu-outline"></ion-icon>
+          </button>
+
+        </div>
+
+        <div class="flex-wrapper">
+
+          <ul class="desktop-nav">
+
+            <li>
+              <a href="./index.html" class="nav-link">Home</a>
+            </li>
+
+            <li>
+              <a href="./blog.html" class="nav-link">Blog</a>
+            </li>
+
+            <!-- <li>
+              <a class="nav-link">
+                <select class="py-2 bg-transparent" onchange="Category(this)">
+                  <option value="">Category</option>
+                  <option value="database">database</option>
+                  <option value="nodejs">nodejs</option>
+                  <option value="performance">performance</option>
+                  <option value="optimize">optimize</option>
+                  <option value="inclusion">inclusion</option>
+                  <option value="a11y">a11y</option>
+                </select>
+              </a>
+            </li> -->
+
+            <li>
+              <a href="./about.html" class="nav-link">About</a>
+            </li>
+
+            <li>
+              <a href="./contact.html" class="nav-link">Contact</a>
+            </li>
+
+          </ul>
+
+          <button class="theme-btn theme-btn-desktop light">
+            <ion-icon name="moon" class="moon"></ion-icon>
+            <ion-icon name="sunny" class="sun"></ion-icon>
+          </button>
+
+        </div>
+
+        <div class="mobile-nav">
+
+          <button class="nav-close-btn">
+            <ion-icon name="close-outline"></ion-icon>
+          </button>
+
+          <div class="wrapper">
+
+            <p class="h3 nav-title">Main Menu</p>
+
+            <ul>
+              <li class="nav-item">
+                <a href="./index.html" class="nav-link">Home</a>
+              </li>
+
+              <li>
+                <a href="./blog.html" class="nav-link">Blog</a>
+              </li>
+
+              <li class="nav-item">
+                <a href="./about.html" class="nav-link">About</a>
+              </li>
+
+              <li class="nav-item">
+                <a href="./contact.html" class="nav-link">Contact</a>
+              </li>
+            </ul>
+
+          </div>
+
+        </div>
+
+      </nav>
+
+    </div>
+
+  </header>
+
+
+
+
+
+  <main>
+
+    <!--
+      - #HERO SECTION
+    -->
+
+
+    <!-- <div style="background: var(--background-secondary);"
+      class="hero flex items-center justify-center text-center w-full h-full flex-col space-y-4">
+      <div class="h-48 w-48 bg-slate-300 flex items-center justify-center rounded-lg text-8xl">J</div>
+      <div class="text-center w-full flex justify-center">
+        <p class="border p-4 rounded-lg border-l-4 w-1/2 text-center border-green-500">AffiliateWP Blog is an excellent
+          resource if you’re a business owner looking to set up an affiliate program
+          or an affiliate marketer wanting to optimize your strategy. They cover various topics, including selecting
+          the right affiliates, starting an affiliate program, and the latest trends in the industry.</p>
+      </div>
+    </div> -->
+
+    <div style="background: var(--background-secondary);"
+      class="aboutus-card hero pt-2 pb-2 px-10 w-full flex !text-start items-center">
+      <div class="w-1/2 space-y-6" style="font-family: Inter, sans-serif;">
+        <h1 style="color: var(--foreground-primary);" class="text-6xl font-semibold">About Us</h1>
+        <p style="color: var(--foreground-secondary);">resource if you’re a business owner looking to set up an
+          affiliate program
+          or an affiliate marketer wanting to optimize your strategy. They cover various topics, including selecting
+          the right affiliates, starting an affiliate program, and the latest trends in the industry.</p>
+      </div>
+      <div class="w-1/2">
+        <img src="./assets/images/two-men-talking-about-projects-results-in-office-vector-26323914-removebg-preview.png"
+          alt="img">
+      </div>
+    </div>
+
+
+
+
+
+
+
+
+  </main>
+
+
+
+
+
+  <!--
+    - #FOOTER
+  -->
+
+  <footer>
+
+    <div class="container">
+
+      <div class="wrapper">
+
+        <a href="#" class="footer-logo">
+          <img src="./assets/images/logo-light.svg" alt="DevBlog's Logo" width="150" height="40" class="logo-light">
+          <img src="./assets/images/logo-dark.svg" alt="DevBlog's Logo" width="150" height="40" class="logo-dark">
+        </a>
+
+        <p class="footer-text">
+          Learn about Web accessibility, Web performance, and Database management.
+        </p>
+
+      </div>
+
+      <div class="wrapper">
+
+        <p class="footer-title">Quick Links</p>
+
+        <ul>
+
+          <li>
+            <a href="#" class="footer-link">Advertise with us</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">About Us</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Contact Us</a>
+          </li>
+
+        </ul>
+
+      </div>
+
+      <div class="wrapper">
+
+        <p class="footer-title">Legal Stuff</p>
+
+        <ul>
+
+          <li>
+            <a href="#" class="footer-link">Privacy Notice</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Cookie Policy</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Terms Of Use</a>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </div>
+
+  </footer>
+
+
+
+
+
+  <!--
+    - custom js link
+  -->
+  <script src="./assets/js/script.min.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <script>
+    function Category(event) {
+      // console.log(event.value)
+      window.location.replace("http://localhost/devblog-personal-blog-website-master/blog.html?ref=" + event.value);
+    }
+  </script>
+</body>
+
+</html>

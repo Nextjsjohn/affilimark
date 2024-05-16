@@ -1,0 +1,59 @@
+/* *********** blog-card *************** */
+
+.grid_container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-gap: 1.5rem;
+    gap: 1.5rem;
+    padding: 0 50px;
+    max-width: 1440px;
+    width: 100%;
+    margin: 1.5rem auto 4rem;
+    grid-column: span 12;
+  }
+  #spli_card {
+    grid-column: span 4;
+  }
+  .view-page {
+    padding-left: 10rem;
+    padding-right: 10rem;
+  }
+
+  @media (max-width: 591px) {
+    #spli_card {
+      grid-column: span 12;
+    }
+    .bar-text {
+      text-align: start;
+    } 
+    .view-page {
+      padding-left: 2rem;
+      padding-right: 2rem;
+      text-align: start;
+    }
+  }
+
+  @media screen and (min-width: 592px) and (max-width: 1024px) {
+    #spli_card {
+      grid-column: span 6;
+    }
+    .bar-text {
+      text-align: start;
+    } 
+    .view-page {
+      padding-left: 6rem;
+      padding-right: 6rem;
+      text-align: start;
+    }
+  } 
+  @media (max-width:640px){
+    .aboutus-card {
+      display: block !important;
+      padding-top: 2rem !important;
+      padding-bottom: 2rem !important;
+    }
+    .aboutus-card div:nth-child(1),.aboutus-card div:nth-child(2) {
+      width: 100% !important;
+    }
+  }
+
